@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="_IE browser" parallel='tests'>
+	<test name="_IEBrowserTestcase" preserve-order="true">
+		<parameter name="browser" value="IE"></parameter>
+		<classes> 
+		    <class name="_3TestNGLevel3._MultiBrowserSuite._1InitializeDatasource" />
+			<class name="_3TestNGLevel3._MultiBrowserSuite._2OpenBrowser" />
+			<class name="_3TestNGLevel3._MultiBrowserSuite._3LoginSearchLogout" />
+			<class name="_3TestNGLevel3._MultiBrowserSuite._4CloseBrowser" />
+		</classes>
+	</test>
+	<test name="_ChromeBrowserTestcase" preserve-order="true">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes> 
+		    <class name="_3TestNGLevel3._MultiBrowserSuite._1InitializeDatasource" />
+			<class name="_3TestNGLevel3._MultiBrowserSuite._2OpenBrowser" />
+			<class name="_3TestNGLevel3._MultiBrowserSuite._3LoginSearchLogout" />
+			<class name="_3TestNGLevel3._MultiBrowserSuite._4CloseBrowser" />
+		</classes>
+	</test>
+	<test name="_FirefoxBrowserTestcase" preserve-order="true">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes> 
+		    <class name="_3TestNGLevel3._MultiBrowserSuite._1InitializeDatasource" />
+			<class name="_3TestNGLevel3._MultiBrowserSuite._2OpenBrowser" />
+			<class name="_3TestNGLevel3._MultiBrowserSuite._3LoginSearchLogout" />
+			<class name="_3TestNGLevel3._MultiBrowserSuite._4CloseBrowser" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

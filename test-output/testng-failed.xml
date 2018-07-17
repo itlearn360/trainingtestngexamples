@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [_IE browser]" parallel="tests">
+  <test thread-count="5" name="_IEBrowserTestcase(failed)" parallel="tests">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="_3TestNGLevel3._MultiBrowserSuite._3LoginSearchLogout">
+        <methods>
+          <include name="Login"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- _3TestNGLevel3._MultiBrowserSuite._3LoginSearchLogout -->
+    </classes>
+  </test> <!-- _IEBrowserTestcase(failed) -->
+  <test thread-count="5" name="_ChromeBrowserTestcase(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="_3TestNGLevel3._MultiBrowserSuite._2OpenBrowser">
+        <methods>
+          <include name="initaite_browser" invocation-numbers="0"/>
+          <include name="startBrowser_"/>
+        </methods>
+      </class> <!-- _3TestNGLevel3._MultiBrowserSuite._2OpenBrowser -->
+      <class name="_3TestNGLevel3._MultiBrowserSuite._3LoginSearchLogout">
+        <methods>
+          <include name="Login" invocation-numbers="0 1"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- _3TestNGLevel3._MultiBrowserSuite._3LoginSearchLogout -->
+    </classes>
+  </test> <!-- _ChromeBrowserTestcase(failed) -->
+  <test thread-count="5" name="_FirefoxBrowserTestcase(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="_3TestNGLevel3._MultiBrowserSuite._2OpenBrowser">
+        <methods>
+          <include name="initaite_browser" invocation-numbers="0"/>
+          <include name="startBrowser_"/>
+        </methods>
+      </class> <!-- _3TestNGLevel3._MultiBrowserSuite._2OpenBrowser -->
+      <class name="_3TestNGLevel3._MultiBrowserSuite._3LoginSearchLogout">
+        <methods>
+          <include name="Login" invocation-numbers="0 1"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- _3TestNGLevel3._MultiBrowserSuite._3LoginSearchLogout -->
+    </classes>
+  </test> <!-- _FirefoxBrowserTestcase(failed) -->
+</suite> <!-- Failed suite [_IE browser] -->

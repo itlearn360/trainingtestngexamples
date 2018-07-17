@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="_3TestNGLevel3">
+<test name="_3TestNGParameterAnnotation">
+<parameter name="username" value="qatraining"></parameter>
+<parameter name="password" value="qatraining"></parameter>
+<classes> 
+<class name="_3TestNGLevel3._3TestNGParameterAnnotationForLoginTest" />
+</classes>
+</test>
+</suite> <!-- Suite -->

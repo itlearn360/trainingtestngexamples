@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="_3TestNGLevel2">
+<test name="_2TestNGGroupdependencies">
+<groups>
+<run>
+  <include name="login"></include>
+  <include name="searchflight"></include>
+  <include name="logout"></include>
+</run>
+</groups>
+<classes> 
+<class name="_3TestNGLevel2._2TestNGGroupdependencies" />
+</classes>
+</test>
+</suite> <!-- Suite -->
